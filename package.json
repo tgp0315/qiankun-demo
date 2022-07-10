@@ -1,0 +1,29 @@
+{
+  "name": "qiankun-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "install:main": "cd main && cnpm i",
+    "install:react16": "cd react16 && cnpm i",
+    "install:react15": "cd react15 && cnpm i",
+    "install:vue": "cd vue && cnpm i",
+    "install:vue3": "cd vue3 && cnpm i",
+    "start": "npm-run-all --parallel start:*",
+    "start:main": "cd main && npm run start",
+    "start-main-multiple": "cd main && yarn start:multiple",
+    "start:react16": "cd react16 && npm run start",
+    "start:react15": "cd react15 && npm run start",
+    "start:vue": "cd vue && npm run start",
+    "start:vue3": "cd vue3 && npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "qiankun": "^2.7.3"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
